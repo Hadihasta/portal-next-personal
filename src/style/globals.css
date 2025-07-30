@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @config "../../tailwind.config.ts";
+@import "@radix-ui/themes/styles.css";
 
 :root {
   --background: #ffffff;

@@ -8,14 +8,15 @@ export default function Navbar() {
     <nav className=" tw-i-brand shadow-md px-6 py-4 flex justify-between items-center bg-sky-950">
       <div className="text-xl font-bold text-blue-600">
         <i className="tw-i-prisma tw-i-tabler-prisma text-xl i-tabler-prisma"></i>
-        MySite aaaaas
+        MySite aaaaas{" "}
+        <i className="i-tabler-brand-tailwind text-blue-600 text-3xl "></i>
       </div>
       <ul className="flex  space-x-6">
         <li>
           <Link href="/" className="hover:text-blue-500">
             Home <i className="i-mdi-home"></i>
             <div className="text-blue-600 text-3xl">
-              dwadwdwaaaaaaaaaaaaa{" "}
+              dwadwdwaaaaaaaaaaaaa
               <i
                 className="tw-i-tabler-brand-tailwind text-blue
 

@@ -1,47 +1,62 @@
 // app/components/Navbar.tsx
-"use client";
+'use client'
+// <div className="text-xl font-bold text-blue-600 ">
+//   <i className="tw-i-tabler-prisma text-xl"></i> MySite
+//   <i className="i-tabler-brand-tailwind text-blue-600 text-3xl"></i>
+// </div>
 
-import Link from "next/link";
+import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <nav className=" tw-i-brand shadow-md px-6 py-4 flex justify-between items-center bg-sky-950">
-      <div className="text-xl font-bold text-blue-600">
-        <i className="tw-i-prisma tw-i-tabler-prisma text-xl i-tabler-prisma"></i>
-        MySite aaaaas{" "}
-        <i className="i-tabler-brand-tailwind text-blue-600 text-3xl "></i>
+    <>
+      <div className="flex justify-center sticky">
+        <nav className=" w-fit mt-8 top-0 z-50 bg-gradient-to-r from-sky-400/30 to-sky-600/30 backdrop-blur-md border-b border-white/20 shadow-md px-3 py-3 flex justify-between items-center text-white rounded-md">
+          <ul className="flex space-x-6">
+            <li>
+              <Link
+                href="/"
+                className="hover:text-blue-500"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/"
+                className="hover:text-blue-500"
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/projects"
+                className="hover:text-blue-500"
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                className="hover:text-blue-500"
+              >
+                CV
+              </Link>
+            </li>
+            <div>|</div>
+            <li>
+              <Link
+                href="/contact"
+                className="hover:text-blue-500"
+              >
+                More
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <ul className="flex  space-x-6">
-        <li>
-          <Link href="/" className="hover:text-blue-500">
-            Home <i className="i-mdi-home"></i>
-            <div className="text-blue-600 text-3xl">
-              dwadwdwaaaaaaaaaaaaa
-              <i
-                className="tw-i-tabler-brand-tailwind text-blue
-
-"
-              ></i>
-            </div>
-            <div>dadwadw</div>
-          </Link>
-        </li>
-        <li>
-          <Link href="/about" className="hover:text-blue-500">
-            About
-          </Link>
-        </li>
-        <li>
-          <Link href="/projects" className="hover:text-blue-500">
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link href="/contact" className="hover:text-blue-500">
-            Contact
-          </Link>
-        </li>
-      </ul>
-    </nav>
-  );
+    </>
+  )
 }

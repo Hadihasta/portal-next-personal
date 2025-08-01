@@ -8,11 +8,12 @@ const config = {
     extend: {},
   },
   plugins: [
+   
     iconsPlugin({
       collections: getIconCollections(["tabler"]),
     }),
   ],
-  //   prefix: "tw-",
+  
 };
 
 export default config;

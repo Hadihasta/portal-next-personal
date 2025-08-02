@@ -6,7 +6,11 @@ import { iconsPlugin, getIconCollections } from "@egoist/tailwindcss-icons";
 const config = {
   content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+        fontFamily: {
+        arial: ['Arial', 'Helvetica', 'sans-serif'],
+      },
+    },
   },
   plugins: [
    

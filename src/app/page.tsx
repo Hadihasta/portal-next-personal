@@ -1,4 +1,5 @@
-import PathDrawing from "@/components/global/pathDrawing"
+import PathDrawing from '@/components/global/pathDrawing'
+import AboutMe from '@/components/home/AboutMe'
 // import Image from "next/image";
 //      <Image
 //           className="dark:invert"
@@ -14,12 +15,8 @@ export default function Home() {
   return (
     <>
       <div id="main-section">
-        <div >
-          main section
-        </div>
-        <div className="path">
-            <PathDrawing/>
-           </div>
+        <PathDrawing />
+        <AboutMe />
       </div>
     </>
   )

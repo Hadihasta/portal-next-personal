@@ -43,6 +43,12 @@ const Profile = () => {
           loop
           autoplay
         />
+
+     <DotLottieReact
+          src="/animation/laptop.lottie"
+          loop
+          autoplay
+        />
       </Box>
 
       <Flex gap="2">

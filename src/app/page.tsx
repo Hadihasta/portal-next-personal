@@ -2,6 +2,8 @@
 
 import AboutMe from '@/components/home/AboutMe'
 import PathDrawing from '@/components/global/pathDrawing'
+import SimpleText from '@/components/global/typhographi/simpleText'
+
 // import Image from "next/image";
 //      <Image
 //           className="dark:invert"
@@ -16,10 +18,18 @@ import PathDrawing from '@/components/global/pathDrawing'
 export default function Home() {
   return (
     <>
-      <div id="main-section" className='flex-row'>
+      <div
+        id="main-section"
+        className="flex-row justify-center  items-center gap-2"
+      >
         <AboutMe />
         <PathDrawing />
       </div>
+
+      <div id='idea-board'> 
+          <SimpleText/>
+      </div>
+
     </>
   )
 }

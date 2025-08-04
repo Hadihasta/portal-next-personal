@@ -2,11 +2,10 @@
 
 import React from 'react'
 import { Flex, Avatar, Box, Card, Text } from '@radix-ui/themes'
-import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 
 const Profile = () => {
   return (
-    <div>
+    <>
       <Box maxWidth="240px">
         <Card>
           <Flex
@@ -38,28 +37,17 @@ const Profile = () => {
             <i className="i-tabler-arrow-narrow-right"></i>
           </Flex>
         </Card>
-        <DotLottieReact
-          src="https://lottie.host/b413b45c-6e2d-4c8a-a7bb-2f7bbec41b60/1yR2CHgLIg.lottie"
-          loop
-          autoplay
-        />
-
-     <DotLottieReact
-          src="/animation/laptop.lottie"
-          loop
-          autoplay
-        />
       </Box>
-
+{/* 
       <Flex gap="2">
         <Avatar
           src="/close_up.jpg"
           fallback=""
           size="8"
         />
-        {/* <Avatar fallback="B" size="3" radius="full" /> */}
-      </Flex>
-    </div>
+        <Avatar fallback="B" size="3" radius="full" />
+      </Flex> */}
+    </>
   )
 }
 

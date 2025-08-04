@@ -1,5 +1,7 @@
-import PathDrawing from '@/components/global/pathDrawing'
+'use client'
+
 import AboutMe from '@/components/home/AboutMe'
+import PathDrawing from '@/components/global/pathDrawing'
 // import Image from "next/image";
 //      <Image
 //           className="dark:invert"
@@ -14,9 +16,9 @@ import AboutMe from '@/components/home/AboutMe'
 export default function Home() {
   return (
     <>
-      <div id="main-section">
-        <PathDrawing />
+      <div id="main-section" className='flex-row'>
         <AboutMe />
+        <PathDrawing />
       </div>
     </>
   )

@@ -10,7 +10,7 @@ import Link from 'next/link'
 export default function Navbar() {
   return (
     <>
-      <div className="flex justify-center sticky">
+      <div className="sm:flex justify-center sticky hidden ">
         <nav className=" w-fit mt-8 top-0 z-50 bg-gradient-to-r from-sky-400/30 to-sky-600/30 backdrop-blur-md border-b border-white/20 shadow-md px-3 py-3 flex justify-between items-center text-white rounded-md">
           <ul className="flex space-x-6">
             <li>

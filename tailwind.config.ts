@@ -1,24 +1,23 @@
 // tailwind.config.js or tailwind.config.ts
 // font-[family-name:var(--font-geist-sans)] font custom
-import { iconsPlugin, getIconCollections } from "@egoist/tailwindcss-icons";
+import { iconsPlugin, getIconCollections } from '@egoist/tailwindcss-icons'
 
 /** @type {import('tailwindcss').Config} */
 const config = {
-  content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-        fontFamily: {
+      fontFamily: {
         arial: ['Arial', 'Helvetica', 'sans-serif'],
+        outfit: ['var(--font-outfit)'],
       },
     },
   },
   plugins: [
-   
     iconsPlugin({
-      collections: getIconCollections(["tabler"]),
+      collections: getIconCollections(['tabler']),
     }),
   ],
-  
-};
+}
 
-export default config;
+export default config

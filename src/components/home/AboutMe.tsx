@@ -1,25 +1,24 @@
 import React from 'react'
 import Profile from './profile'
-import Image from 'next/image'
+import { Typewriter } from 'react-simple-typewriter'
 
 const AboutMe = () => {
+  
   return (
-    <div className="font-arial">
-      <div>{`I'm Hadi`}</div>
-      <div>{`I Work with React Cycle,`}</div>
-       <Image
-        src="/icon/lamp.svg"
-        alt="Quote"
-        width={100}
-        height={100}
-      />
-      <Image
-        src="/typographi/simpleText.svg"
-        alt="Quote"
-        width={500}
-        height={500}
-      />
-      <Profile />
+    <div className="font-arial p-3 mt-3">
+      <div className=" font-bold text-4xl ">
+        <Typewriter
+          words={["I'm Hadi"]}
+          loop={1}
+          cursor
+          cursorStyle="|"
+          typeSpeed={100}
+        />
+      </div>
+      <div className='text-lg sm:text-xl font-medium '>{`I’m a frontend developer crafting modern web applications using React cycle, with a strong focus on clean code and intuitive UI/UX.`}</div>
+      <div className='mt-3'>
+        <Profile />
+      </div>
     </div>
   )
 }

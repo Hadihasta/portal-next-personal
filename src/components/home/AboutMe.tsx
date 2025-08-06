@@ -3,21 +3,20 @@ import Profile from './profile'
 import { Typewriter } from 'react-simple-typewriter'
 
 const AboutMe = () => {
+  
   return (
-    <div className="font-arial  ">
-      <div className="font-[GeistMono] font-bold text-4xl ">
+    <div className="font-arial p-3 mt-3">
+      <div className=" font-bold text-4xl ">
         <Typewriter
           words={["I'm Hadi"]}
-          loop={false}
+          loop={1}
           cursor
-          cursorStyle="_"
+          cursorStyle="|"
           typeSpeed={100}
-          deleteSpeed={100}
-          delaySpeed={2000}
         />
       </div>
-      <div>{`I Work with React Cycle,`}</div>
-      <div>
+      <div className='text-lg sm:text-xl font-medium '>{`I’m a frontend developer crafting modern web applications using React cycle, with a strong focus on clean code and intuitive UI/UX.`}</div>
+      <div className='mt-3'>
         <Profile />
       </div>
     </div>

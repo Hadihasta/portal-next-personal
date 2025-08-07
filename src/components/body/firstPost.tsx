@@ -1,6 +1,7 @@
 import React from 'react'
-import { Inset, Box, Card, Text, Strong, DataList, Link, Badge, Flex, Code, IconButton } from '@radix-ui/themes'
-import { EyeOpenIcon } from '@radix-ui/react-icons'
+import { Inset, Box, Card, Text, Strong } from '@radix-ui/themes'
+import Views from '../global/Views'
+
 const FirstPost = () => {
   return (
     <div className="mt-4">
@@ -42,18 +43,7 @@ const FirstPost = () => {
           <i className="i-tabler-brand-react text-blue-600 text-3xl"></i>
           <i className="i-tabler-brand-prisma text-blue-600 text-3xl"></i>
 
-          <div>
-            <DataList.Root>
-              <IconButton
-                size="1"
-                aria-label="Copy value"
-                color="jade"
-                variant="ghost"
-              >
-                <EyeOpenIcon />
-              </IconButton>
-            </DataList.Root>
-          </div>
+        <Views counter={'5.590'}/>
         </Card>
       </Box>
     </div>

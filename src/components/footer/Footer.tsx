@@ -9,6 +9,7 @@ const Footer = () => {
       <hr className="border-t border-gray-700 my-4 drop-shadow-[0_0_4px_#00f]" />
       <Head />
       <Body />
+      <hr className="border-t border-gray-700 my-4 drop-shadow-[0_0_4px_#00f]" />
       <Foot />
     </div>
   )

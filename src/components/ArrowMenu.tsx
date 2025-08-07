@@ -3,7 +3,7 @@ import { DropdownMenu, Button } from '@radix-ui/themes'
 
 const ArrowMenu = () => {
   return (
-    <div className="sm:hidden! flex   justify-end  mx-4 mt-8">
+    <div className="sm:hidden! flex   justify-end  mx-4 ">
       <DropdownMenu.Root>
         <DropdownMenu.Trigger>
           <Button

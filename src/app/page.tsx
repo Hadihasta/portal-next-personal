@@ -7,6 +7,8 @@ import SimpleText from '@/components/global/typhographi/simpleText'
 import RecentlyPost from '@/components/body/RecentlyPost'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Retro from '@/components/retro/Retro'
+import Footer from '@/components/footer/Footer'
 
 // import Image from "next/image";
 //      <Image
@@ -51,14 +53,20 @@ export default function Home() {
         <SimpleText />
       </div>
 
-      <div id="body-section"  className='fade-in mx-4'>
+      <div
+        id="body-section"
+        className="fade-in mx-4"
+      >
         <RecentlyPost />
-        {/* rencana di isi ketertarikan stack utama */}
       </div>
 
-      <div id="secondary-section">{/* rencana di isi retrospective*/}</div>
+      <div id="secondary-section">
+        <Retro></Retro>
+      </div>
 
-      <div id="footer-section">{/* rencana di isi  credit */}</div>
+      <div id="footer-section">
+        <Footer />
+      </div>
     </>
   )
 }

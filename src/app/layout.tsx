@@ -5,7 +5,6 @@ import { Theme } from '@radix-ui/themes'
 import ArrowMenu from '@/components/ArrowMenu'
 import Navbar from '@/components/navbar'
 
-
 const outfit = Outfit({
   subsets: ['latin'],
   display: 'swap',
@@ -27,11 +26,10 @@ export default function RootLayout({
       lang="en"
       className={`${outfit.variable}`}
     >
-      <body className={`antialiased sm:max-w-4xl mx-auto `}>
+      <body className={`antialiased  mx-auto `}>
         <Theme appearance="dark">
           <Navbar />
           <ArrowMenu />
-
           {children}
         </Theme>
       </body>

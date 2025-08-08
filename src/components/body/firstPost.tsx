@@ -43,7 +43,7 @@ const FirstPost = () => {
           <i className="i-tabler-brand-react text-blue-600 text-3xl"></i>
           <i className="i-tabler-brand-prisma text-blue-600 text-3xl"></i>
 
-        <Views counter={'5.590'}/>
+          <Views counter={'5.590'} />
         </Card>
       </Box>
     </div>

@@ -10,7 +10,7 @@ const ArrowMenu = () => {
             color="gray"
             variant="soft"
           >
-            Options
+            Menu
             <DropdownMenu.TriggerIcon />
           </Button>
         </DropdownMenu.Trigger>
@@ -18,10 +18,10 @@ const ArrowMenu = () => {
           color="gray"
           variant="soft"
         >
-          <DropdownMenu.Item shortcut="⌘ E">Edit</DropdownMenu.Item>
-          <DropdownMenu.Item shortcut="⌘ D">Duplicate</DropdownMenu.Item>
+          <DropdownMenu.Item shortcut="⌘ E">Home</DropdownMenu.Item>
+          <DropdownMenu.Item shortcut="⌘ D">Goals</DropdownMenu.Item>
           <DropdownMenu.Separator />
-          <DropdownMenu.Item shortcut="⌘ N">Archive</DropdownMenu.Item>
+          <DropdownMenu.Item shortcut="⌘ N">Projects</DropdownMenu.Item>
         </DropdownMenu.Content>
       </DropdownMenu.Root>
     </div>

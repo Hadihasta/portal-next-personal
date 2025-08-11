@@ -30,7 +30,6 @@ export default function Home() {
       duration: 1,
       scrollTrigger: {
         trigger: '.fade-in',
-        start: 'top 80%',
         toggleActions: 'play none none reverse',
       },
     })
@@ -40,7 +39,7 @@ export default function Home() {
     <>
       <div
         id="main-section"
-        className="flex-col justify-center  items-center gap-2 fade-in"
+        className="flex-col justify-center  items-center gap-2 fade-in mb-[300px]"
       >
         <AboutMe />
         <PathDrawing />
@@ -48,7 +47,7 @@ export default function Home() {
 
       <div
         id="idea-board"
-        className="fade-in my-10"
+        className="fade-in my-[50px] "
       >
         <SimpleText />
       </div>

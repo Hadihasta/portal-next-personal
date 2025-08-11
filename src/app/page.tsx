@@ -10,28 +10,37 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Retro from '@/components/retro/Retro'
 import Footer from '@/components/footer/Footer'
 
-// import Image from "next/image";
-//      <Image
-//           className="dark:invert"
-//           src="/next.svg"
-//           alt="Next.js logo"
-//           width={180}
-//           height={38}
-//           priority
-//         />
-//  <i className="i-tabler-transition-right-filled"></i>
 gsap.registerPlugin(ScrollTrigger)
 
 export default function Home() {
   useEffect(() => {
     gsap.from('.fade-in', {
+      scrollTrigger: {
+        trigger: '.fade-in',
+      },
       opacity: 0,
       y: 50,
       duration: 1,
+    })
+
+    gsap.from('.wait-scroll-in', {
       scrollTrigger: {
-        trigger: '.fade-in',
-        toggleActions: 'play none none reverse',
+        trigger: '.wait-scroll-in',
+        start: 'top center',
       },
+      opacity: 0,
+      y: 50,
+      duration: 1,
+    })
+
+    gsap.from('.wait-second-in', {
+      scrollTrigger: {
+        trigger: '.wait-second-in',
+        start: 'top center',
+      },
+      opacity: 0,
+      y: 50,
+      duration: 1,
     })
   }, [])
 
@@ -39,7 +48,7 @@ export default function Home() {
     <>
       <div
         id="main-section"
-        className="flex-col justify-center  items-center gap-2 fade-in mb-[300px]"
+        className="flex-col justify-center  items-center gap-2 fade-in mb-[200px]"
       >
         <AboutMe />
         <PathDrawing />
@@ -47,19 +56,22 @@ export default function Home() {
 
       <div
         id="idea-board"
-        className="fade-in my-[50px] "
+        className=" my-[50px] wait-scroll-in "
       >
         <SimpleText />
       </div>
 
       <div
         id="body-section"
-        className="fade-in mx-4"
+        className="mx-4 my-[100px] wait-scroll-in  "
       >
         <RecentlyPost />
       </div>
 
-      <div id="secondary-section">
+      <div
+        id="secondary-section "
+        className="  my-[200px] wait-second-in"
+      >
         <Retro></Retro>
       </div>
 

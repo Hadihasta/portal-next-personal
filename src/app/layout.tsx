@@ -13,7 +13,7 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: 'Hijri Hadi',
-  description: 'An online blog andp ortofolio By hadi',
+  description: 'An online blog and portofolio By hadi',
 }
 
 export default function RootLayout({

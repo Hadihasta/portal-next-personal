@@ -29,8 +29,8 @@ export default function Home() {
         start: 'top center',
       },
       opacity: 0,
-      y: 50,
-      duration: 1,
+      y: 100,
+      duration: 3,
     })
 
     gsap.from('.wait-second-in', {
@@ -40,7 +40,7 @@ export default function Home() {
       },
       opacity: 0,
       y: 50,
-      duration: 1,
+      duration: 3,
     })
   }, [])
 

@@ -18,10 +18,10 @@ const ArrowMenu = () => {
           color="gray"
           variant="soft"
         >
-          <DropdownMenu.Item shortcut="⌘ E">Home</DropdownMenu.Item>
-          <DropdownMenu.Item shortcut="⌘ D">Goals</DropdownMenu.Item>
+          <DropdownMenu.Item>Home</DropdownMenu.Item>
           <DropdownMenu.Separator />
-          <DropdownMenu.Item shortcut="⌘ N">Projects</DropdownMenu.Item>
+          <DropdownMenu.Item>Goals</DropdownMenu.Item>
+          <DropdownMenu.Item>Projects</DropdownMenu.Item>
         </DropdownMenu.Content>
       </DropdownMenu.Root>
     </div>

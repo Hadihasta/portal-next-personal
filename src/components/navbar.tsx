@@ -1,16 +1,26 @@
-// app/components/Navbar.tsx
 'use client'
-// <div className="text-xl font-bold text-blue-600 ">
-//   <i className="tw-i-tabler-prisma text-xl"></i> MySite
-//   <i className="i-tabler-brand-tailwind text-blue-600 text-3xl"></i>
-// </div>
 
+import { gsap } from 'gsap'
 import Link from 'next/link'
+import { useEffect } from 'react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Navbar() {
+  useEffect(() => {
+    gsap.from('.fade-for_nav', {
+      scrollTrigger: {
+        trigger: '.fade-for_nav',
+      },
+      opacity: 0,
+      y: -100,
+      duration: 1,
+    })
+  }, [])
   return (
     <>
-      <div className="sm:flex justify-center sticky hidden ">
+      <div className="sm:flex justify-center sticky hidden  fade-for_nav">
         <nav className=" w-fit mt-8 top-0 z-50 bg-gradient-to-r from-sky-400/30 to-sky-600/30 backdrop-blur-md border-b border-white/20 shadow-md px-3 py-3 flex justify-between items-center text-white rounded-md">
           <ul className="flex space-x-6">
             <li>

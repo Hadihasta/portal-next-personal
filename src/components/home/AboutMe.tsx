@@ -5,7 +5,7 @@ import { Typewriter } from 'react-simple-typewriter'
 const AboutMe = () => {
   
   return (
-    <div className="font-arial p-3 mt-3">
+    <div className="font-arial p-3 mt-3 sm:grid gap-[2em] ">
       <div className=" font-bold text-4xl ">
         <Typewriter
           words={["I'm Hadi"]}
@@ -15,7 +15,7 @@ const AboutMe = () => {
           typeSpeed={100}
         />
       </div>
-      <div className='text-lg sm:text-xl font-medium '>{`I’m a frontend developer crafting modern web applications using React cycle, with a strong focus on clean code and intuitive UI/UX.`}</div>
+      <div className='text-lg sm:text-xl font-medium max-w-md'>{`I’m a front-end developer crafting modern web applications using React cycle, with a strong focus on clean code and intuitive UI/UX.`}</div>
       <div className='mt-3'>
         <Profile />
       </div>

@@ -3,6 +3,7 @@ import { DropdownMenu, Button } from '@radix-ui/themes'
 
 const ArrowMenu = () => {
   return (
+    <>
     <div className="sm:hidden! flex   justify-end  mx-4 pt-2 ">
       <DropdownMenu.Root>
         <DropdownMenu.Trigger>
@@ -25,6 +26,14 @@ const ArrowMenu = () => {
         </DropdownMenu.Content>
       </DropdownMenu.Root>
     </div>
+
+       <style>{`
+        // .rt-DropdownMenuViewport {
+        //  width: 10px !important;
+        // }
+       
+      `}</style>
+      </>
   )
 }
 

@@ -26,7 +26,7 @@ export default function RootLayout({
       lang="en"
       className={`${outfit.variable}`}
     >
-      <body className={`antialiased  mx-auto `}>
+      <body className={`antialiased m-0!`}>
         <Theme appearance="dark">
           <Navbar />
           <ArrowMenu />

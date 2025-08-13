@@ -27,7 +27,7 @@ export default function PathDrawing() {
   }
 
   const image: React.CSSProperties = {
-    maxWidth: '80vw',
+    maxWidth: '40vw',
   }
 
   const shape: React.CSSProperties = {
@@ -39,8 +39,8 @@ export default function PathDrawing() {
   return (
     <>
       <motion.svg
-        width="200"
-        height="300"
+        width="sm:250 200 "
+        height=" sm:250 300"
         viewBox="0 0 600 600"
         initial="hidden"
         animate="visible"

@@ -15,7 +15,7 @@ const AboutMe = () => {
           typeSpeed={100}
         />
       </div>
-      <div className='text-lg sm:text-xl font-medium max-w-md'>{`I’m a front-end developer crafting modern web applications using React cycle, with a strong focus on clean code and intuitive UI/UX.`}</div>
+      <div className='text-lg sm:text-xl font-medium max-w-md whitespace-pre-wrap'>{`I’m a front-end developer crafting modern web applications using React cycle, with a strong focus on clean code and intuitive UI/UX.`}</div>
       <div className='mt-3'>
         <Profile />
       </div>

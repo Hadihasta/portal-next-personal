@@ -21,12 +21,12 @@ export default function Navbar() {
   return (
     <>
       <div className="sm:flex justify-center sticky hidden  fade-for_nav">
-        <nav className=" w-fit mt-8 top-0 z-50 bg-gradient-to-r from-sky-400/30 to-sky-600/30 backdrop-blur-md border-b border-white/20 shadow-md px-3 py-3 flex justify-between items-center text-white rounded-md">
+        <nav className=" w-fit mt-8 top-0 z-50 bg-gradient-to-r  backdrop-blur-md border-b border-white/20 shadow-md px-3 py-3 flex justify-between items-center text-white rounded-md">
           <ul className="flex space-x-6">
             <li>
               <Link
                 href="/"
-                className="hover:text-blue-500"
+                className="hover:text-blue-500 font-medium"
               >
                 Home
               </Link>
@@ -34,7 +34,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/"
-                className="hover:text-blue-500"
+                className="hover:text-blue-500 font-medium"
               >
                 Blog
               </Link>
@@ -42,7 +42,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/projects"
-                className="hover:text-blue-500"
+                className="hover:text-blue-500 font-medium"
               >
                 Projects
               </Link>
@@ -50,7 +50,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/contact"
-                className="hover:text-blue-500"
+                className="hover:text-blue-500 font-medium"
               >
                 CV
               </Link>
@@ -59,7 +59,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/contact"
-                className="hover:text-blue-500"
+                className="hover:text-blue-500 font-medium"
               >
                 More
               </Link>

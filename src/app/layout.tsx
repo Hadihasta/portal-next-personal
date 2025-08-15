@@ -26,7 +26,7 @@ export default function RootLayout({
       lang="en"
       className={`${outfit.variable}`}
     >
-      <body className={`antialiased m-0!`}>
+      <body className={`antialiased m-0!  flex justify-center`}>
         <Theme appearance="dark">
           <Navbar />
           <ArrowMenu />

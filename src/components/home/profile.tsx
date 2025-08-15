@@ -34,7 +34,7 @@ const Profile = () => {
                 Web Developer
               </Text>
             </Box>
-            <i className="i-tabler-arrow-narrow-right"></i>
+            <i className="i-tabler-arrow-narrow-right cursor-pointer animate-bounce-x"></i>
           </Flex>
         </Card>
       </Box>

@@ -9,7 +9,7 @@ const Profile = () => {
       <Box maxWidth="240px">
         <Card>
           <Flex
-            gap="3"
+            gap="4"
             align="center"
           >
             <Avatar
@@ -34,7 +34,10 @@ const Profile = () => {
                 Web Developer
               </Text>
             </Box>
-            <i className="i-tabler-arrow-narrow-right cursor-pointer animate-bounce-x"></i>
+            <div className='animate-bounce-x flex size-10  items-center justify-center rounded-full bg-white p-2 ring-1 ring-gray-900/5 dark:bg-white/5 dark:ring-white/20'>
+
+            <i className="i-tabler-arrow-narrow-right font- cursor-pointer text-3xl "></i>
+            </div>
           </Flex>
         </Card>
       </Box>

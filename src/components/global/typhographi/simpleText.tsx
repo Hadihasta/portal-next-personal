@@ -9,6 +9,7 @@ const SimpleText = () => {
         <Image
           src="/typographi/simpleText.svg"
           alt="Quote"
+          className='sm:w-[500]  sm:h-[500]'
           width={250}
           height={250}
         />

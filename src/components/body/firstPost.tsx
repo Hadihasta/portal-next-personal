@@ -1,11 +1,21 @@
-import React from 'react'
+import { useEffect } from 'react'
 import { Inset, Box, Card, Text, Strong } from '@radix-ui/themes'
 import Views from '../global/Views'
+import ReadTime from '@/components/global/useable/ReadTime'
+import { animate, hover } from 'motion'
 
 const FirstPost = () => {
+  useEffect(() => {
+    hover('.box', (element) => {
+      animate(element, { scale: 1.3 })
+
+      return () => animate(element, { scale: 1 })
+    })
+  }, [])
+
   return (
     <div className="mt-4">
-      <Box className="flex">
+      <Box className="flex box">
         <Card size="2">
           <Inset
             clip="padding-box"
@@ -44,6 +54,7 @@ const FirstPost = () => {
           <i className="i-tabler-brand-prisma text-blue-600 text-3xl"></i>
 
           <Views counter={'5.590'} />
+          <ReadTime minute={'5'} />
         </Card>
       </Box>
     </div>

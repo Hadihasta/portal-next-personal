@@ -5,9 +5,10 @@ import FirstPost from './firstPost'
 const RecentlyPost = () => {
   return (
     <div>
+      {/* #977DFF */}
       <div
         className="font-bold text-4xl 
-        bg-gradient-to-r from-[#e3f5fe] to-[#6279e8] 
+        bg-gradient-to-r from-white to-[#0033FF] 
         bg-clip-text text-transparent"
       >
         Recently

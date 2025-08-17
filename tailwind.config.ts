@@ -7,6 +7,16 @@ const config = {
   content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+       backgroundImage: {
+      'greySurface': '#2D3E50',
+      'greySoft': '#37475E',
+      'greyMute': '#1E293B',
+    },
+     colors: {
+      greySurface: '#2D3E50',
+      greySoft: '#37475E',
+      greyMute: '#1E293B',
+    },
        keyframes: {
         'bounce-x': {
           '0%, 100%': {

@@ -10,19 +10,12 @@ const FirstRetro = () => {
     <div className="my-2 mx-auto">
       <Box style={{ background: 'var(--gray-a2)', borderRadius: 'var(--radius-3)' }}>
         <Container size="1">
-          <Text
-            size="4"
-            weight="bold"
-          >
-            2024 Journey
-          </Text>
-
           <Carousel className="w-full max-w-xs">
             <CarouselContent>
               {images.map((src, index) => (
                 <CarouselItem key={index}>
                   <div className="p-1">
-                    <Card className='object-cover'>
+                    <Card className="object-cover">
                       <CardContent className="flex aspect-[calc(4*3+1)/3] items-center justify-center ">
                         <img
                           src={src}

@@ -15,7 +15,7 @@ const Retro = () => {
         personal life.
         {/* Here’s a look at the past three years. */}
       </Text>
-      <Text size="8"> 2024 Journey</Text>
+      <Text size="8"> 2025 Journey</Text>
       <FirstRetro></FirstRetro>
     </div>
   )

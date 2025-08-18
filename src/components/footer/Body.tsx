@@ -2,8 +2,8 @@ import React from 'react'
 
 const Body = () => {
   return (
-    <div >
-      <footer className="bg-black text-white py-12 px-6">
+    <div>
+      <footer className=" text-white py-12 px-6">
         <div className="max-w-screen-xl mx-auto grid  grid-cols-3 ">
           {/* Navigasi - General */}
           <div>
@@ -13,42 +13,36 @@ const Body = () => {
                 <a href="#">Home</a>
               </li>
               <li>
-                <a href="#">Blog</a>
+                <a href="#">Goals</a>
               </li>
               <li>
                 <a href="#">Projects</a>
-              </li>
-              <li>
-                <a href="#">Shorts</a>
-              </li>
-              <li>
-                <a href="#">About</a>
               </li>
             </ul>
           </div>
 
           {/* Navigasi - The Website */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Resources</h4>
+            <h4 className="text-lg font-semibold mb-4">Tools</h4>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
-                <a href="#">Bucket List</a>
+                <a href="#">Github</a>
               </li>
               <li>
-                <a href="#">Uses</a>
+                <a href="#">Notion</a>
               </li>
               <li>
-                <a href="#">Side Quests</a>
+                <a href="#">Excalidraw</a>
               </li>
               <li>
-                <a href="#">Attribution</a>
+                <a href="#">Chatgpt</a>
               </li>
               <li>
-                <a href="#">Statistics</a>
+                <a href="#">unsplash</a>
               </li>
-              <li>
-                <a href="#">Guest Book</a>
-              </li>
+              {/* <li>
+                <a href="#"> radix tailwind motion dev swipper</a>
+              </li> */}
             </ul>
           </div>
 
@@ -57,23 +51,10 @@ const Body = () => {
             <h4 className="text-lg font-semibold mb-4"> Contact</h4>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
-                <a href="#">Book Notes</a>
-              </li>
-              <li>
-                <a href="#">Starter Templates</a>
-              </li>
-              <li>
-                <a href="#">RSS</a>
-              </li>
-              <li>
-                <a href="#">Mentorship</a>
-              </li>
-              <li>
-                <a href="#">Analytics</a>
+                <a href="#">Hijrihadi@gmail.com</a>
               </li>
             </ul>
           </div>
-
         </div>
       </footer>
     </div>

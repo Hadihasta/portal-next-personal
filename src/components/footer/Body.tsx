@@ -4,7 +4,7 @@ const Body = () => {
   return (
     <div>
       <footer className=" text-white py-12 px-6">
-        <div className="max-w-screen-xl mx-auto grid  grid-cols-3 ">
+        <div className="max-w-screen-xl mx-auto grid  grid-cols-2 md:grid-cols-3  ">
           {/* Navigasi - General */}
           <div>
             <h4 className="text-lg font-semibold mb-4">General</h4>

@@ -6,10 +6,10 @@ import Foot from './Foot'
 const Footer = () => {
   return (
     <div className='mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8"'>
-      <hr className="border-t border-gray-700 my-4 drop-shadow-[0_0_4px_#00f]" />
+      <hr className="border-t border-greySurface my-4 drop-shadow-greyMute" />
       <Head />
       <Body />
-      <hr className="border-t border-gray-700 my-4 drop-shadow-[0_0_4px_#00f]" />
+      <hr className="border-t border-greySurface my-4 drop-shadow-greyMute" />
       <Foot />
     </div>
   )

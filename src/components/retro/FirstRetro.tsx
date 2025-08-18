@@ -1,40 +1,35 @@
-import React from 'react'
-import { Text, Container, Box } from '@radix-ui/themes'
-import { Card, CardContent } from '@/components/ui/card'
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
+'use client'
 
-const FirstRetro = () => {
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay, Pagination, Navigation } from 'swiper/modules'
+
+export default function FirstRetro() {
   const images = ['/photo/Elabram_1.jpg', '/photo/Elabram_2.jpg']
 
   return (
-    <div className="my-2 mx-auto">
-      <Box style={{ background: 'var(--gray-a2)', borderRadius: 'var(--radius-3)' }}>
-        <Container size="1">
-          <Carousel className="w-full max-w-xs">
-            <CarouselContent>
-              {images.map((src, index) => (
-                <CarouselItem key={index}>
-                  <div className="p-1">
-                    <Card className="object-cover">
-                      <CardContent className="flex aspect-[calc(4*3+1)/3] items-center justify-center ">
-                        <img
-                          src={src}
-                          alt={`Image ${index + 1}`}
-                          className="w-full h-full object-cover"
-                        />
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-        </Container>
-      </Box>
+    <div className="my-2 mx-auto w-full">
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{ delay: 2500, disableOnInteraction: false }}
+        pagination={{ clickable: true }}
+        // navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="w-full rounded-lg"
+      >
+        {images.map((src, index) => (
+          <SwiperSlide
+            key={index}
+            className=" flex "
+          >
+            <img
+              src={src}
+              alt={`Image ${index + 1}`}
+              className="h-36 w-full object-cover md:h-full "
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   )
 }
-
-export default FirstRetro

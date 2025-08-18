@@ -21,7 +21,7 @@ const FirstPost = () => {
       <div
         onMouseEnter={(e) => setIsHovered(true)}
         onMouseLeave={(e) => setIsHovered(false)}
-        className=" mx-auto overflow-hidden rounded-xl  bg-gradient-to-br from-[#2D3E50] via-[#37475E] to-[#1E293B]  shadow-md"
+        className=" mx-auto overflow-hidden rounded-xl  bg-gradient-to-br from-[#2D3E50] via-[#37475E] to-[#1E293B]  shadow-md cursor-pointer"
       >
         <div className="md:flex">
           <div className="md:shrink-0">
@@ -33,7 +33,7 @@ const FirstPost = () => {
           </div>
           <div className="p-6 flex flex-col">
             <div >
-              <Text size="1">June 20, 2023 </Text>
+              <Text size="1">June 20, 2025 </Text>
               <a
                 href="#"
                 className="mt-1 block text-lg leading-tight font-medium text-white"

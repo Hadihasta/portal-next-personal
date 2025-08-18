@@ -11,12 +11,12 @@ const Views =  ({ counter }: { counter: string }) => {
               color="jade"
               variant="ghost"
             >
-              <EyeOpenIcon />
+          <EyeOpenIcon className="w-6 h-6" />
             </IconButton>
 
             <Text
               weight="light"
-              size="1"
+              size="3"
             >
           {counter} Views
             </Text>

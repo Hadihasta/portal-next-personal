@@ -11,7 +11,7 @@ const AboutMe = () => {
           words={["I'm Hadi"]}
           loop={1}
           cursor
-          cursorStyle="|"
+          cursorStyle="."
           typeSpeed={100}
         />
       </div>

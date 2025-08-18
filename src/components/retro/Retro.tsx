@@ -6,6 +6,7 @@ const Retro = () => {
   return (
     <div className="m-4 flex-col">
       <Text size="8">Retro</Text>
+
       <Text
         size="2"
         weight="medium"
@@ -14,6 +15,7 @@ const Retro = () => {
         personal life.
         {/* Here’s a look at the past three years. */}
       </Text>
+      <Text size="8"> 2024 Journey</Text>
       <FirstRetro></FirstRetro>
     </div>
   )

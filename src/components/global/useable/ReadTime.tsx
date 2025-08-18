@@ -11,12 +11,12 @@ const ReadTime = ({ minute }: { minute: string }) => {
         color="jade"
         variant="ghost"
       >
-        <IdCardIcon />
+        <IdCardIcon  className="w-6 h-6" />
       </IconButton>
 
       <Text
         weight="light"
-        size="1"
+        size="3"
       >
         {minute} minute read
       </Text>

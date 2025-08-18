@@ -7,7 +7,17 @@ const config = {
   content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-       keyframes: {
+      backgroundImage: {
+        greySurface: '#2D3E50',
+        greySoft: '#37475E',
+        greyMute: '#1E293B',
+      },
+      colors: {
+        greySurface: '#2D3E50',
+        greySoft: '#37475E',
+        greyMute: '#1E293B',
+      },
+      keyframes: {
         'bounce-x': {
           '0%, 100%': {
             transform: 'translateX(-25%)',
@@ -22,7 +32,7 @@ const config = {
       animation: {
         'bounce-x': 'bounce-x 1s infinite',
       },
-      
+
       fontFamily: {
         arial: ['Arial', 'Helvetica', 'sans-serif'],
         outfit: ['var(--font-outfit)'],
@@ -33,6 +43,7 @@ const config = {
     iconsPlugin({
       collections: getIconCollections(['tabler']),
     }),
+    require('tailwindcss-animate'),
   ],
 }
 

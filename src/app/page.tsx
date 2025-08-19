@@ -48,7 +48,7 @@ export default function Home() {
     <>
       <div
         id="main-section"
-        className="sm:flex-row! sm:my-[10%]  sm:gap-[10em] flex-col justify-center  items-center gap-2 fade-in mb-[200px] "
+        className="sm:flex-row! sm:my-[10%]  sm:gap-[10em] flex-col justify-center  items-center gap-2 fade-in mb-[200px]  "
       >
         <AboutMe />
         <PathDrawing />

@@ -3,7 +3,7 @@ import { Text } from '@radix-ui/themes'
 
 const Head = () => {
   return (
-    <div className='flex-col '>
+    <div className='flex-col'>
       <Text
         size="4"
         weight="bold"

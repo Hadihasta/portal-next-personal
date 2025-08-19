@@ -36,7 +36,7 @@ const AboutMe = () => {
         <Profile />
         </div>
         <div
-          className="text-xl mt-2 fade-icon "
+          className=" flex text-xl md:text-3xl mt-4 gap-2 fade-icon cursor-pointer "
         >
           <i className="i-tabler-brand-github "></i>
           <i className="i-tabler-brand-linkedin "></i>
